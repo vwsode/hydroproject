@@ -42,16 +42,16 @@ const path = {
     html: htmlPath + "**/*.html",
     css: assetsPath + "scss/*.scss",
     js: srcPath + "*.js",
-    imgaes: assetsPath + "img/**/*.{jpeg, webp, png, svg, ico }",
-    fonts: assetsPath + "fonts/**/*.{woff, eot, woff2, ttf }",
+    imgaes: assetsPath + "img/**/*.{jpeg,webp,png,svg,ico}",
+    fonts: assetsPath + "fonts/**/*.{woff,eot,woff2,ttf}",
   },
   // Watch - отслеживание изменений в файлах для обновления
   watch: {
     html: htmlPath + "**/*.html",
     css: assetsPath + "scss/**/*.scss",
     js: srcPath + "**/*.js",
-    images: assetsPath + "img/**/*.{jpeg, webp, png, svg, ico}",
-    fonts: assetsPath + "fonts/**/*.{woff, eot, woff2, ttf}",
+    images: assetsPath + "img/**/*.{jpeg,webp,png,svg,ico}",
+    fonts: assetsPath + "fonts/**/*.{woff,eot,woff2,ttf}",
   },
   // Clean - очистка папки dist
   clean: "./" + distPath,
@@ -145,6 +145,7 @@ const build = gulp.series(clean, gulp.parallel([html, css, js, images, fonts]));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 module.exports = {
+  clean,
   build,
   run: watch,
 };
