@@ -1,0 +1,201 @@
+.intro {
+  background: url("../img/intro/bg.jpg") no-repeat center;
+  background-size: cover;
+
+  //overflow-x: hidden;
+
+  .container {
+    width: unset;
+  }
+
+
+  &__inner {
+
+    display: flex;
+    gap: vw(180px);
+    padding: vw(80px) 0 vw(168px) 0;
+
+    @media screen and (max-width: 1401px) {
+      justify-content: space-between;
+    }
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      padding: vwm(80px) 0 vwm(173px) 0;
+      gap: vwm(60px);
+
+    }
+  }
+
+  &__text {
+    position: relative;
+    padding: vw(40px) vw(80px) vw(48px) 0;
+    display: flex;
+    flex-direction: column;
+
+
+    @media screen and (max-width: 1401px) {
+      padding: vwh(40px) vwh(80px) vwh(48px) 0;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: vwm(40px) 0 vwm(48px) 0;
+    }
+
+    z-index: 3;
+
+    &-bg {
+      width: vw(1140px);
+      background-color: rgba(0, 0, 0, 70%);
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      border-top-right-radius: vw(4px);
+      border-bottom-right-radius: vw(4px);
+      backdrop-filter: blur(vw(2.5px));
+
+      top: 0;
+      //left: vw(-250px);
+
+      right: 0;
+
+      @media screen and (max-width: 1401px) {
+        width: vwh(963px);
+        border-top-right-radius: vwh(4px);
+        border-bottom-right-radius: vwh(4px);
+        backdrop-filter: blur(vwh(2.5px));
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 100vw;
+        left: vwm(-16px);
+      }
+    }
+
+  }
+
+  &__title {
+    @include h1;
+    color: $white;
+
+    margin-bottom: vw(24px);
+    width: vw(680px);
+
+    @media screen and (max-width: 1401px) {
+      width: vwh(680px);
+      margin-bottom: vwh(24px);
+    }
+
+    @media screen and (max-width: 576px) {
+      font-size: vwm(24px);
+      margin-bottom: vwm(24px);
+      width: 100%;
+    }
+
+    &--colored {
+      color: $blue_light;
+    }
+
+  }
+
+  &__description {
+    @include t1;
+    color: $white;
+
+    width: vw(480px);
+
+    margin-bottom: vw(48px);
+
+    @media screen and (max-width: 1401px) {
+      width: vwh(480px);
+      margin-bottom: vwh(48px);
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      margin-bottom: vwm(48px);
+    }
+  }
+
+  &__btn {
+    @include button2;
+    color: $white;
+    background-color: $blue_bright;
+    align-self: flex-start;
+
+    height: vw(48px);
+    border-radius: vw(4px);
+    padding: vw(10px) vw(20px);
+
+
+    margin-right: 0;
+
+    @media screen and (max-width: 1401px) {
+      height: vwh(48px);
+      border-radius: vwh(4px);
+      padding: vwh(10px) vwh(20px)
+    }
+
+    @media screen and (max-width: 991px) {
+      height: vwt(48px);
+      border-radius: vwt(4px);
+      padding: vwt(10px) vwt(20px)
+    }
+
+    @media screen and (max-width: 576px) {
+      height: vwm(48px);
+      border-radius: vwm(4px);
+      padding: vwm(10px) vwm(20px);
+      width: 100%;
+    }
+
+  }
+
+  &__items {
+    &-title {
+      @include h3;
+      color: $white;
+      margin-bottom: vw(24px);
+
+      @media screen and (max-width: 1401px) {
+        margin-bottom: vwh(24px);
+      }
+
+      @media screen and (max-width: 576px) {
+        margin-bottom: vwm(24px);
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: vw(8px);
+
+      @media screen and (max-width: 1401px) {
+        gap: vwh(8px);
+      }
+
+      @media screen and (max-width: 991px) {
+        gap: vwt(8px);
+      }
+
+      @media screen and (max-width: 576px) {
+        gap: vwm(8px);
+      }
+
+      list-style: none;
+    }
+
+  }
+  &__item {
+    @include tab;
+    width: max-content;
+
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      text-align: center;
+    }
+    //display: inline-block;
+  }
+
+}

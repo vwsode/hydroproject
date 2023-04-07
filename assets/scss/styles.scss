@@ -1,10 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
 }
 
-// comments
-body {
-  background-color: black;
-  color: whitesmoke;
+@function rem($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($base-font)}rem;
 }
+
+@function vw($px, $media: 1920) {
+  @return #{stripUnit($px) / stripUnit($media) * 100}vw;
+}
+
+@function vwh($px, $media: 1366) {
+  @return #{stripUnit($px) / stripUnit($media) * 100}vw;
+}
+
+@function vwt($px, $media: 768) {
+  @return #{stripUnit($px) / stripUnit($media) * 100}vw;
+}
+
+@function vwm($px, $media: 375) {
+  @return #{stripUnit($px) / stripUnit($media) * 100}vw;
+}
+
+// Base import
+@import './base/common.scss';
+@import './base/fonts.scss';
+@import './base/vars.scss';
+@import './base/mixin.scss';
+@import './base/reset.scss';
+
+// Layout import
+@import './layout/header.scss';
+@import './layout/navigation.scss';
+
+// Components import
+@import './components/card-product.scss';
+@import './components/input_select.scss';
+
+// Sections import
+@import './sections/intro.scss';
+@import './sections/about.scss';
+@import './sections/products.scss';
+@import './sections/calc.scss';

@@ -1,0 +1,108 @@
+<section class="calc">
+    <div class="container">
+        <div class="calc__inner">
+            <div class="calc__text">
+                <h2 class="calc__title">Расчитать стоимость</h2>
+                <p class="calc__description">Укажите нужные вам характеристики и мы расчитаем стоимость заказа в течение 15 минут</p>
+            </div>
+            <form class="calc__form">
+                <div class="calc__form-left">
+                    <h3 class="calc__form-title">1. Характеристики:</h3>
+                    <div class="calc__form-controls">
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Диаметр трубы (мм)</span>
+                            <input class="calc__form-field-input" placeholder="100" type="text">
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Толщина стенки (мм)</span>
+                            <input class="calc__form-field-input" placeholder="5" type="text">
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Наружная изоляция</span>
+                            <div class="calc__form-field-select input-select">
+                                <div class="input-select__head">
+                                    <span class="input-select__current-value">ВУС</span>
+                                    <svg class="input-select__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <ul class="input-select__values">
+                                    <li class="input-select__value">ВУС</li>
+                                    <li class="input-select__value">Без изоляции</li>
+                                </ul>
+                            </div>
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Внутренняя изоляция</span>
+                            <div class="calc__form-field-select input-select">
+                                <div class="input-select__head">
+                                    <span class="input-select__current-value">ВУС</span>
+                                    <svg class="input-select__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <ul class="input-select__values">
+                                    <li class="input-select__value">ВУС</li>
+                                    <li class="input-select__value">Без изоляции</li>
+                                </ul>
+                            </div>
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Количество (п/м)</span>
+                            <input class="calc__form-field-input" placeholder="100" type="text">
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Назначение</span>
+                            <div class="calc__form-field-select input-select">
+                                <div class="input-select__head">
+                                    <span class="input-select__current-value">Вода</span>
+                                    <svg class="input-select__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 9L12 15L18 9" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <ul class="input-select__values">
+                                    <li class="input-select__value">ВУС</li>
+                                    <li class="input-select__value">Без изоляции</li>
+                                </ul>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="calc__form-right">
+                    <h3 class="calc__form-title">2. Ваши данные:</h3>
+                    <div class="calc__form-controls">
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Имя*</span>
+                            <input class="calc__form-field-input" placeholder="100" type="text">
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Телефон*</span>
+                            <input class="calc__form-field-input" placeholder="100" type="text">
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">E-mail</span>
+                            <input class="calc__form-field-input" placeholder="info@tpo-gp.ru" type="text">
+                        </label>
+                        <label class="calc__form-field">
+                            <span class="calc__form-field-label">Организация</span>
+                            <input class="calc__form-field-input" placeholder="Гидропроект" type="text">
+                        </label>
+                    </div>
+                    <label class="calc__form-privacy">
+                        <input class="calc__form-privacy-check" type="checkbox" name="" id="">
+                        <span class="calc__form-privacy-text">Даю согласие на обработку персональных данных</span>
+                    </label>
+                    <div class="calc__form-btns">
+                        <button class="calc__form-btn-calculate">Расччитать стоимость</button>
+                        <button class="calc__form-btn-file">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5 5.25581V16.5C17.5 19.5376 15.0376 22 12 22C8.96243 22 6.5 19.5376 6.5 16.5V5.66667C6.5 3.64162 8.14162 2 10.1667 2C12.1917 2 13.8333 3.64162 13.8333 5.66667V16.4457C13.8333 17.4583 13.0125 18.2791 12 18.2791C10.9875 18.2791 10.1667 17.4583 10.1667 16.4457V6.65116" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Прикрепить файл
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

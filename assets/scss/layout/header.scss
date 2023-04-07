@@ -1,0 +1,316 @@
+.header {
+  background-color: $white;
+
+  height: vw(64px);
+  position: relative;
+
+  .container {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1401px) {
+    height: vwh(64px);
+  }
+
+  @media screen and (max-width: 991px) {
+    height: vwt(64px);
+  }
+
+  @media screen and (max-width: 576px) {
+    height: vwm(64px);
+  }
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: vw(24px);
+
+    @media screen and (max-width: 1401px) {
+      gap: vwh(24px);
+    }
+
+    @media screen and (max-width: 991px) {
+      gap: vwt(24px);
+    }
+
+    @media screen and (max-width: 576px) {
+      gap: vwm(24px);
+    }
+
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: vw(12px);
+
+    @media screen and (max-width: 1401px) {
+      gap: vwh(12px);
+    }
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+
+    @media screen and (max-widtH: 576px) {
+    }
+  }
+
+  &__logo {
+    margin-right: vw(43.5px);
+
+    width: vw(183px);
+    height: vw(48px);
+
+    @media screen and (max-width: 1401px) {
+      width: vwh(183px);
+      height: vwh(48px);
+    }
+
+    @media screen and (max-width: 991px) {
+      width: vwt(183px);
+      height: vwt(48px);
+    }
+
+    @media screen and (max-width: 576px) {
+      width: vwm(160px);
+      height: vwm(42px);
+    }
+
+    svg {
+      width: vw(183px);
+      height: vw(48px);
+
+      @media screen and (max-width: 1401px) {
+        width: vwh(183px);
+        height: vwh(48px);
+      }
+
+      @media screen and (max-width: 991px) {
+        width: vwt(183px);
+        height: vwt(48px);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: vwm(160px);
+        height: vwm(42px);
+      }
+    }
+  }
+
+  &__nav {
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  &__whats-up {
+    width: vw(60px);
+    height: vw(60px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: vw(10px);
+
+    @media screen and (max-width: 1401px) {
+      width: vwh(60px);
+      height: vwh(60px);
+      padding: vwh(10px);
+    }
+
+    @media screen and (max-width: 991px) {
+      width: vwt(60px);
+      height: vwt(60px);
+      padding: vwt(10px);
+    }
+
+    @media screen and (max-width: 576px) {
+      width: vwm(60px);
+      height: vwm(60px);
+      padding: vwm(10px);
+    }
+
+    svg {
+      width: vw(40px);
+      height: vw(40px);
+
+      @media screen and (max-width: 1401px) {
+        width: vwh(40px);
+        height: vwh(40px);
+      }
+
+      @media screen and (max-width: 991px) {
+        width: vwt(40px);
+        height: vwt(40px);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: vwm(40px);
+        height: vwm(40px);
+      }
+    }
+
+  }
+
+  &__contacts {
+    text-align: right;
+
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 576px) {
+      text-align: left;
+      gap: vwm(10px);
+    }
+
+    &-text {
+      flex-direction: column;
+      display: flex;
+    }
+
+    &-tel {
+      @include number;
+      color: $gray_black;
+      text-decoration: none;
+      display: inline-block;
+
+      @media screen and (max-width: 1401px) {
+        margin-top: vwh(6px);
+      }
+
+      @media screen and (max-width: 991px) {
+        margin-top: vwt(6px);
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: vwm(20px);
+        margin-top: vwm(6px);
+      }
+    }
+
+    &-time {
+      @include postscript;
+      color: $gray50;
+    }
+
+
+  }
+
+  &__btn {
+    @include button1;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: vw(4px);
+    padding: vw(10px) vw(20px);
+    background-color: $blue_main;
+    color: $white;
+    height: vw(40px);
+
+    @media screen and (max-width: 1401px) {
+      border-radius: vwh(4px);
+      height: vwh(40px);
+      padding: vwh(10px) vwh(20px);
+    }
+
+    @media screen and (max-width: 991px) {
+      border-radius: vwt(4px);
+      height: vwt(40px);
+      padding: vwt(10px) vwt(20px);
+    }
+
+    @media screen and (max-width: 576px) {
+      margin-top: vwm(12px);
+      border-radius: vwm(4px);
+      height: vwm(40px);
+      padding: vwm(10px) vwm(20px);
+      width: 100%;
+    }
+  }
+
+  &__mobile-menu {
+    left: -100%;
+    transition-property: left;
+    transition-duration: 200ms;
+
+    &--acitve {
+      left: vwt(16px);
+
+      @media screen and (max-width: 576px) {
+        left: vwm(16px);
+      }
+    }
+
+    position: absolute;
+    width: calc(100% - vwt(16px));
+    top: calc(vwt(64px) + vwt(40px));
+    padding-right: vwt(16px);
+    display: none;
+
+    @media screen and (max-width: 991px) {
+      display: block;
+    }
+
+    @media screen and (max-width: 576px) {
+      width: calc(100% - vwm(16px));
+      top: calc(vwm(64px) + vwm(40px));
+      padding-right: vwm(16px);
+    }
+
+    .header__nav {
+      display: block;
+
+      margin-bottom: vwt(60px);
+
+      @media screen and (max-width: 576px) {
+        margin-bottom: vwm(60px);
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    gap: vwt(8px);
+    width: vwt(40px);
+
+    padding: vwt(9px) 0;
+
+    @media screen and (max-width: 991px) {
+      display: flex;
+    }
+
+    @media screen and (max-width: 576px) {
+      gap: vwm(8px);
+      width: vwm(40px);
+
+      padding: vwm(9px) 0;
+    }
+
+    flex-direction: column;
+    &-bar {
+      background-color: $gray_black;
+      height: vwt(2px);
+
+
+      @media screen and (max-width: 576px) {
+        height: vwm(2px);
+      }
+
+      width: 100%;
+    }
+  }
+}
+

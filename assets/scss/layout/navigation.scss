@@ -1,0 +1,31 @@
+.nav {
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: vw(12px);
+
+    @media screen and (max-width: 1401px) {
+      gap: vwh(12px);
+    }
+
+    @media screen and (max-width: 991px) {
+      gap: vwt(12px);
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 576px) {
+      gap: vwm(12px);
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    @include link;
+    color: $gray25;
+  }
+}

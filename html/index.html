@@ -5,10 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Document</title>
+    <title>Гидропроект</title>
   </head>
   <body>
-    sdf heelo @@include("./sections/main.html")
-    @@include("./partials/footer.html")
+    @@include('./partials/header.html')
+
+    <div class="main">
+      @@include('./sections/intro.html')
+      @@include('./sections/about.html')
+      @@include('./sections/goods.html')
+      @@include('./sections/calc.html')
+    </div>
+
   </body>
 </html>

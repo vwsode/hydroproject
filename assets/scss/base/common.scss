@@ -1,0 +1,21 @@
+body {
+  font-family: Inter;
+}
+
+.container {
+  margin: 0 vw(360px);
+
+  @media screen and (max-width: 1401px) {
+    margin: 0 vwh(120px);
+  }
+
+  //@media screen and (max-width: 991px) {
+  //  margin: 0 vwt(16px);
+  //}
+
+  @media screen and (max-width: 576px) {
+    margin: 0 vwm(16px);
+  }
+}
+
+

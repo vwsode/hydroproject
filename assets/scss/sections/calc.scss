@@ -1,0 +1,275 @@
+.calc {
+  background: $blue_dark;
+
+  &__inner {
+    padding: vw(60px) 0 vw(80px);
+
+    @media screen and (max-width: 1401px) {
+      padding: vwh(60px) 0 vwh(80px);
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: vwm(60px) 0 vwm(80px);
+    }
+  }
+
+  &__text {
+    max-width: vw(460px);
+    margin-bottom: vw(40px);
+
+    @media screen and (max-width: 1401px) {
+      max-width: vw(460px);
+      margin-bottom: vwh(40px);
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+      margin-bottom: vwm(40px);
+
+    }
+  }
+
+  &__title {
+    @include h2;
+    color: $white;
+  }
+
+  &__description {
+    @include t2;
+    color: $gray95;
+  }
+
+  &__form {
+    border-radius: vw(4px);
+    padding: vw(40px) vw(80px);
+    background-color: $blue_main;
+
+    display: flex;
+
+    @media screen and (max-width: 1401px) {
+      border-radius: vwh(4px);
+      padding: vwh(40px) vwh(80px);
+    }
+
+    @media screen and (max-width: 576px) {
+      border-radius: vwm(4px);
+      padding: vwm(40px) vwm(20px);
+      flex-direction: column;
+    }
+
+    &-privacy {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: vw(8px);
+
+      @media screen and (max-width: 1401px) {
+        gap: vwh(8px);
+      }
+
+      @media screen and (max-width: 576px) {
+        gap: vwm(8px);
+      }
+
+      &-check {
+        @include checkbox;
+      }
+      &-text {
+        @include postscript;
+        color: $white;
+      }
+    }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+      gap: vw(20px);
+      margin-top: vw(16px);
+
+      @media screen and (max-width: 1401px) {
+        gap: vwh(20px);
+        margin-top: vwh(16px);
+      }
+
+      @media screen and (max-width: 576px) {
+        gap: vwm(20px);
+        margin-top: vwm(16px);
+        flex-direction: column;
+      }
+    }
+
+    &-btn-calculate {
+      @include button1;
+
+      height: vw(40px);
+
+      background-color: $white;
+      color: $blue_main;
+      padding: vw(10px) vw(20px);
+      border-radius: vw(4px);
+
+      @media screen and (max-width: 1401px) {
+        height: vwh(40px);
+        padding: vwh(10px) vwh(20px) vwh(10px) vwh(12px);
+        border-radius: vwh(4px);
+      }
+
+      @media screen and (max-width: 576px) {
+        height: vwm(40px);
+        padding: vwm(10px) vwm(20px) vwm(10px) vwm(12px);
+        border-radius: vwm(4px);
+        width: 100%;
+      }
+    }
+
+    &-btn-file {
+      @include button1;
+
+      height: vw(40px);
+      padding: vw(10px) vw(20px) vw(10px) vw(12px);
+      border-radius: vw(4px);
+      gap: vw(10px);
+
+      background-color: $blue_bright;
+      color: $white;
+
+
+      display: flex;
+      align-items: center;
+
+      svg {
+        width: vw(24px);
+        height: vw(24px);
+
+        @media screen and (max-width: 1401px) {
+          width: vwh(24px);
+          height: vwh(24px);
+        }
+
+        @media screen and (max-width: 576px) {
+          width: vwm(24px);
+          height: vwm(24px);
+        }
+      }
+
+      @media screen and (max-width: 1401px) {
+        height: vwh(40px);
+        padding: vwh(10px) vwh(20px) vwh(10px) vwh(12px);
+        border-radius: vwh(4px);
+        gap: vwh(10px);
+      }
+
+      @media screen and (max-width: 576px) {
+        height: vwm(40px);
+        padding: vwm(10px) vwm(20px) vwm(10px) vwm(12px);
+        border-radius: vwm(4px);
+        gap: vwm(10px);
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    &-field {
+
+      &-label {
+        @include t3;
+        color: $white;
+        display: inline-block;
+        margin-bottom: vw(4px);
+
+        @media screen and (max-width: 1401px) {
+          margin-bottom: vwh(4px);
+        }
+
+        @media screen and (max-width: 576px) {
+          margin-bottom: vwm(4px);
+        }
+      }
+
+      &-input {
+        @include input;
+      }
+    }
+
+    &-left {
+      padding-right: vw(80px);
+      border-right: vw(2px) solid rgba(255, 255, 255, 0.5);
+      width: 50%;
+
+      .calc__form-controls {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: vw(20px);
+
+        @media screen and (max-width: 1401px) {
+          gap: vwh(20px);
+        }
+
+        @media screen and (max-width: 576px) {
+          grid-template-columns: repeat(1, 1fr);
+          gap: vwm(20px);
+        }
+
+      }
+
+      @media screen and (max-width: 1401px) {
+        padding-right: vwh(80px);
+        border-right: vwh(2px) solid rgba(255, 255, 255, 0.5);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+
+    &-right {
+      padding-left: vw(80px);
+      width: 50%;
+
+      .calc__form-controls {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: vw(20px);
+
+        margin-bottom: vw(32px);
+
+        @media screen and (max-width: 1401px) {
+          gap: vwh(20px);
+          margin-bottom: vwh(32px);
+        }
+
+        @media screen and (max-width: 576px) {
+          grid-template-columns: repeat(1, 1fr);
+          gap: vwm(20px);
+          margin-bottom: vwm(32px);
+        }
+      }
+
+      @media screen and (max-width: 1401px) {
+        padding-left: vwh(80px);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+
+    &-title {
+      @include h3;
+      color: $white;
+      margin-bottom: vw(24px);
+
+      @media screen and (max-width: 1401px) {
+        margin-bottom: vwh(24px);
+      }
+
+      @media screen and (max-width: 576px) {
+        margin-bottom: vwm(24px);
+      }
+    }
+  }
+
+}

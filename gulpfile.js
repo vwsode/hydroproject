@@ -42,7 +42,7 @@ const path = {
     html: htmlPath + "**/*.html",
     css: assetsPath + "scss/*.scss",
     js: srcPath + "*.js",
-    imgaes: assetsPath + "img/**/*.{jpeg,webp,png,svg,ico}",
+    images: assetsPath + "img/**/*.{jpg,jpeg,webp,png,svg,ico}",
     fonts: assetsPath + "fonts/**/*.{woff,eot,woff2,ttf}",
   },
   // Watch - отслеживание изменений в файлах для обновления
@@ -50,7 +50,7 @@ const path = {
     html: htmlPath + "**/*.html",
     css: assetsPath + "scss/**/*.scss",
     js: srcPath + "**/*.js",
-    images: assetsPath + "img/**/*.{jpeg,webp,png,svg,ico}",
+    images: assetsPath + "img/**/*.{jpg,jpeg,webp,png,svg,ico}",
     fonts: assetsPath + "fonts/**/*.{woff,eot,woff2,ttf}",
   },
   // Clean - очистка папки dist
@@ -109,7 +109,7 @@ function js() {
 }
 
 function images() {
-  return src(path.src.imgaes, { base: assetsPath + "img/" })
+  return src(path.src.images, { base: assetsPath + "img/" })
     .pipe(imagemin())
     .pipe(dest(path.build.images))
     .pipe(browserSync.reload({ stream: true }));

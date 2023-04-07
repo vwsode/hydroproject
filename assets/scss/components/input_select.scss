@@ -1,0 +1,123 @@
+.input-select {
+
+  width: 100%;
+
+  &--active {
+    .input-select__values {
+      z-index: 10;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__icon {
+    width: vw(24px);
+    height: vw(24px);
+
+    @media screen and (max-width: 1401px) {
+      width: vwh(24px);
+      height: vwh(24px);
+
+    }
+
+    @media screen and (max-width: 576px) {
+      width: vwm(24px);
+      height: vwm(24px);
+    }
+  }
+
+  &__head {
+    cursor: pointer;
+
+    padding: vw(8px) vw(12px);
+    border: vw(1px) solid $gray95;
+    gap: vw(12px);
+    border-radius: vw(4px);
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1401px) {
+      padding: vwh(8px) vwh(12px);
+      border: vwh(1px) solid $gray95;
+      gap: vwh(12px);
+      border-radius: vwh(4px);
+
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: vwm(8px) vwm(12px);
+      border: vwm(1px) solid $gray95;
+      gap: vwm(12px);
+      border-radius: vwm(4px);
+    }
+
+  }
+  position: relative;
+
+  &__current-value {
+    @include t2;
+    color: $white;
+
+  }
+
+  &__values {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: vw(4px);
+    border: vw(1px) solid $gray95;
+    top: calc(100% + vw(10px));
+    background: $blue_main;
+    overflow: hidden;
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+
+    @media screen and (max-width: 1401px) {
+      border-radius: vwh(4px);
+      border: vwh(1px) solid $gray95;
+      top: calc(100% + vwh(10px));
+    }
+
+    @media screen and (max-width: 576px) {
+      border-radius: vwm(4px);
+      border: vwm(1px) solid $gray95;
+      top: calc(100% + vwm(10px));
+    }
+  }
+
+  &__value {
+    //padding: vw(8px) 0;
+    padding: vw(8px) vw(12px);
+    cursor: pointer;
+
+
+
+
+    background: $blue_main;
+    transition-property: background-color, color;
+    transition-duration: 200ms;
+
+    @media screen and (max-width: 1401px) {
+      padding: vwh(8px) vwh(12px);
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: vwm(8px) vwm(12px);
+    }
+
+    &:hover {
+      background-color: $blue_bright;
+    }
+    @include t2;
+    color: $white;
+  }
+}
