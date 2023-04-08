@@ -1,0 +1,111 @@
+.features {
+  background-color: $white;
+
+  &__inner {
+    padding: vw(60px) 0;
+
+    @media screen and (max-width: 1401px) {
+      padding: vwh(60px) 0;
+    }
+    @media screen and (max-width: 576px) {
+      padding: vwm(60px) 0;
+    }
+  }
+
+  &__title {
+    @include h2;
+    color: $gray_black;
+
+    margin-bottom: vw(60px);
+
+    @media screen and (max-width: 1401px) {
+      margin-bottom: vwh(60px);
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: vwm(60px);
+    }
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: vw(80px);
+
+    @media screen and (max-width: 1401px) {
+      gap: vwh(80px);
+    }
+
+    @media screen and (max-width: 576px) {
+      grid-template-columns: 1fr;
+      gap: vwm(80px);
+      text-align: center;
+      justify-items: center;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 576px) {
+      width: vwm(220px);
+    }
+
+    &-img {
+
+      width: vw(120px);
+      height: vw(120px);
+
+      @media screen and (max-width: 1401px) {
+        width: vwh(120px);
+        height: vwh(120px);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: vwm(120px);
+        height: vwm(120px);
+      }
+
+      &-wrapper {
+        padding: vw(24px);
+        border: vw(1px) solid $blue_main;
+        border-radius: vw(4px);
+        margin-bottom: vw(24px);
+
+        @media screen and (max-width: 1401px) {
+          padding: vwh(24px);
+          border: vwh(1px) solid $blue_main;
+          border-radius: vwh(4px);
+          margin-bottom: vwh(24px);
+        }
+
+        @media screen and (max-width: 576px) {
+          padding: vwm(24px);
+          border: vwm(1px) solid $blue_main;
+          border-radius: vwm(4px);
+          margin-bottom: vwm(24px);
+        }
+
+        display: inline-block;
+
+      }
+    }
+
+    &-title {
+      @include h3;
+      color: $gray_black;
+
+      margin-bottom: vw(8px);
+
+      @media screen and (max-width: 1401px) {
+        margin-bottom: vwh(8px);
+      }
+
+      @media screen and (max-width: 576px) {
+        margin-bottom: vwm(8px);
+      }
+    }
+
+    &-description {
+      @include t2;
+      color: $gray25;
+    }
+  }
+}

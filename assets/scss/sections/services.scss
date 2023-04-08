@@ -1,0 +1,148 @@
+.services {
+  background-color: $white;
+
+  &__inner {
+    padding: vw(60px) 0 vw(80px) 0;
+
+    @media screen and (max-width: 1401px) {
+      padding: vwh(60px) 0 vwh(80px) 0;
+    }
+
+    @media screen and (max-width: 576px) {
+      padding: vwm(60px) 0 vwm(80px) 0;
+    }
+  }
+
+  &__text {
+    max-width: vw(460px);
+    margin-bottom: vw(40px);
+
+    @media screen and (max-width: 1401px) {
+      max-width: vwh(460px);
+      margin-bottom: vwh(40px);
+    }
+
+    @media screen and (max-width: 576px) {
+      max-width: 100%;
+      margin-bottom: vwm(40px);
+    }
+  }
+
+  &__title {
+    @include h2;
+    color: $gray_black;
+    margin-bottom: vw(8px);
+
+    @media screen and (max-width: 1401px) {
+      margin-bottom: vwh(8px);
+    }
+
+    @media screen and (max-width: 576px) {
+      margin-bottom: vwm(8px);
+    }
+  }
+
+  &__description {
+    @include t2;
+    color: $gray25;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: vw(40px);
+
+
+    @media screen and (max-width: 1401px) {
+      gap: vwh(40px);
+    }
+
+    @media screen and (max-width: 576px) {
+      gap: vwm(40px);
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  &__item {
+    width: vw(360px);
+    height: vw(300px);
+    padding: 0 vw(24px) vw(24px) vw(24px);
+    border: vw(1px) solid $blue_main;
+    border-radius: vw(4px);
+
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1401px) {
+      width: vwh(360px);
+      height: vwh(300px);
+      padding: 0 vwh(24px) vwh(24px) vwh(24px);
+      border: vwh(1px) solid $blue_main;
+      border-radius: vwh(4px);
+    }
+
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      height: vwm(300px);
+      padding: 0 vwm(24px) vwm(24px) vwm(24px);
+      border: vwm(1px) solid $blue_main;
+      border-radius: vwm(4px);
+    }
+
+    &-img {
+      align-self: center;
+
+      width: vw(200px);
+      height: vw(200px);
+
+      @media screen and (max-width: 1401px) {
+        width: vwh(200px);
+        height: vwh(200px);
+      }
+
+      @media screen and (max-width: 576px) {
+        width: vwm(200px);
+        height: vwm(200px);
+      }
+
+      text-align: center;
+    }
+    &-title {
+      @include h4;
+      margin-bottom: vw(16px);
+
+      @media screen and (max-width: 1401px) {
+        margin-bottom: vwh(16px);
+      }
+
+      @media screen and (max-width: 576px) {
+        margin-bottom: vwm(16px);
+      }
+
+    }
+    &-btn {
+      @include button1;
+      border-radius: vw(4px);
+      text-align: center;
+      height: vw(40px);
+      color: $white;
+      background-color: $blue_main;
+      padding: vw(10px) vw(20px);
+      width: max-content;
+
+      @media screen and (max-width: 1401px) {
+        border-radius: vwh(4px);
+        height: vwh(40px);
+        padding: vwh(10px) vwh(20px);
+      }
+
+      @media screen and (max-width: 576px) {
+        border-radius: vwm(4px);
+        height: vwm(40px);
+        padding: vwm(10px) vwm(20px);
+      }
+    }
+  }
+
+}

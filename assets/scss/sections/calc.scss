@@ -221,6 +221,7 @@
         width: 100%;
         border-right: none;
         padding-right: 0;
+        padding-bottom: vwm(40px);
       }
     }
 
@@ -254,6 +255,8 @@
       @media screen and (max-width: 576px) {
         width: 100%;
         padding-left: 0;
+        padding-top: vwm(40px);
+        border-top: vw(1px) solid $white;
       }
     }
 

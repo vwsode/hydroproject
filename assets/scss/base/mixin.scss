@@ -57,7 +57,7 @@
 }
 
 @mixin h4 {
-  background: #F5F5F5;
+  //background: #F5F5F5;
   font-family: 'Inter';
   font-weight: 700;
   font-size: vw(16px);
@@ -230,6 +230,22 @@
   }
 
   text-decoration: none;
+}
+
+@mixin big_number {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: vw(64px);
+  line-height: 120%;
+
+  @media screen and (max-width: 1401px) {
+    font-size: vwh(64px);
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: vwm(40px);
+  }
 }
 
 @mixin number {

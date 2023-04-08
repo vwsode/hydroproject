@@ -1,0 +1,126 @@
+.geography {
+  background-color: $white;
+
+  &__inner {
+    padding: vw(60px) 0;
+
+    @media screen and (max-width: 1401px) {
+      padding: vwh(60px) 0;
+    }
+    @media screen and (max-width: 576px) {
+      padding: vwm(60px) 0;
+    }
+  }
+
+  &__title {
+    @include h2;
+    color: $gray_black;
+
+    margin-bottom: vw(60px);
+
+    @media screen and (max-width: 1401px) {
+      margin-bottom: vwh(60px);
+    }
+    @media screen and (max-width: 576px) {
+      margin-bottom: vwm(60px);
+    }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+      gap: vwm(40px);
+    }
+  }
+
+  &__info {
+
+    display: flex;
+    gap: vw(24px);
+    align-items: center;
+
+    @media screen and (max-width: 1401px) {
+      gap: vwh(24px);
+    }
+    @media screen and (max-width: 576px) {
+      gap: vwm(20px);
+    }
+
+    &-items {
+      background-color: $gray95;
+      border-radius: vw(4px);
+      padding: vw(40px);
+      gap: vw(40px);
+
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (max-width: 1401px) {
+        border-radius: vwh(4px);
+        padding: vwh(40px);
+        gap: vwh(40px);
+      }
+      @media screen and (max-width: 576px) {
+        border-radius: vwm(4px);
+        padding: vwm(40px) vwm(20px) ;
+        gap: vwm(40px);
+      }
+    }
+
+    &-title {
+
+      @include big_number;
+      color: $blue_bright;
+      padding: vw(12px);
+      border-radius: vw(4px);
+      background-color: $white;
+
+      @media screen and (max-width: 1401px) {
+        padding: vwh(12px);
+        border-radius: vwh(4px);
+      }
+      @media screen and (max-width: 576px) {
+        padding: vwm(12px);
+        border-radius: vwm(4px);
+      }
+    }
+
+    &-description {
+      @include t2;
+      color: $gray25;
+
+      width: vw(220px);
+
+      @media screen and (max-width: 1401px) {
+        width: vwh(220px);
+      }
+      @media screen and (max-width: 576px) {
+        width: 100%;
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    &-wrapper {
+      width: vw(560px);
+      height: vw(350px);
+
+      @media screen and (max-width: 1401px) {
+        width: vwh(560px);
+        height: vwh(350px);
+      }
+      @media screen and (max-width: 576px) {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+
+}
