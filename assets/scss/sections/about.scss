@@ -6,11 +6,6 @@
   @media screen and (max-width: 1401px) {
     height: vwh(128px);
   }
-
-  @media screen and (max-width: 991px) {
-    height: vwt(128px);
-  }
-
   @media screen and (max-width: 576px) {
     height: vwm(128px);
     background-color: $white;
@@ -38,12 +33,6 @@
       border: vwh(1px) solid $blue_main;
     }
 
-    @media screen and (max-width: 991px) {
-      border-radius: vwt(4px);
-      width: vwt(760px);
-      padding: vwt(40px) vwt(60px);
-      border: vwt(1px) solid $blue_main;
-    }
 
     @media screen and (max-width: 576px) {
       border-radius: vwm(4px);

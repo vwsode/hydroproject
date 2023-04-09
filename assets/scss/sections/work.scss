@@ -1,0 +1,136 @@
+.work {
+    background-color: $gray95;
+
+    &__inner {
+        padding: vw(60px) 0 vw(60px) 0;
+    
+        @media screen and (max-width: 1401px) {
+          padding: vwh(60px) 0 vwh(60px) 0;
+        }
+    
+        @media screen and (max-width: 576px) {
+          padding: vwm(60px) 0 vwm(60px) 0;
+        }
+      }
+    
+      &__title {
+        @include h2;
+        color: $gray_black;
+    
+        margin-bottom: vw(140px);
+    
+        @media screen and (max-width: 1401px) {
+          margin-bottom: vwh(140px);
+        }
+    
+        @media screen and (max-width: 576px) {
+          margin-bottom: vwm(140px);
+        }
+      }
+
+    &__items {
+        display: flex;
+        gap: vw(40px);
+
+        @media screen and (max-width: 1401px) {
+            gap: vwh(40px);
+        }
+      
+        @media screen and (max-width: 576px) {
+            flex-direction: column;
+            gap: vwm(120px);
+        }
+
+    }
+
+    &__item {
+        width: vw(260px);
+        position: relative;
+
+        @media screen and (max-width: 1401px) {
+            width: vwh(260px);
+        }
+      
+        @media screen and (max-width: 576px) {
+            width: 100%;
+        }
+
+        &-number {
+            color: $blue_bright;
+            @include big_number;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: absolute;
+            width: vw(100px);
+            height: vw(100px);
+            top: vw(-80px);
+            left: vw(12px);
+            border: vw(1px) solid #306CBF;
+            border-radius: vw(4px);
+            padding: vw(12px) vw(20px);
+            background-color: $white;
+
+            @media screen and (max-width: 1401px) {
+                width: vwh(100px);
+                height: vwh(100px);
+                top: vwh(-80px);
+                left: vwh(12px);
+                border: vwh(1px) solid #306CBF;
+                border-radius: vwh(4px);
+                padding: vwh(12px) vwh(20px);
+            }
+          
+            @media screen and (max-width: 576px) {
+                width: vwm(100px);
+                height: vwm(100px);
+                top: vwm(-80px);
+                left: vwm(12px);
+                border: vwm(1px) solid #306CBF;
+                border-radius: vwm(4px);
+                padding: vwm(12px) vwm(20px);
+                font-size: vwm(64px);
+            }
+        }
+        
+
+        &-text {
+            padding: vw(40px) vw(20px) vw(32px);
+            border-radius: vw(4px);
+            background: $blue_main;
+
+            @media screen and (max-width: 1401px) {
+                padding: vwh(40px) vwh(20px) vwh(32px);
+                border-radius: vwh(4px);
+            }
+          
+            @media screen and (max-width: 576px) {
+                padding: vwm(40px) vwm(20px) vwm(32px);
+                border-radius: vwm(4px);
+            }
+        }
+
+        &-title {
+            @include h3;
+            color: $white;
+            margin-bottom: vw(12px);
+    
+            @media screen and (max-width: 1401px) {
+                margin-bottom: vwh(12px);
+            }
+        
+            @media screen and (max-width: 576px) {
+                margin-bottom: vwm(12px);
+            }
+        }
+
+        &-description {
+            @include t2;
+            color: $gray95;
+        }
+
+    }
+
+}

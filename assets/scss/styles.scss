@@ -22,6 +22,9 @@
   @return #{stripUnit($px) / stripUnit($media) * 100}vw;
 }
 
+// Libs import
+@import './libs/fancybox.scss';
+
 // Base import
 @import './base/common.scss';
 @import './base/fonts.scss';
@@ -31,6 +34,7 @@
 
 // Layout import
 @import './layout/header.scss';
+@import './layout/footer.scss';
 @import './layout/navigation.scss';
 
 // Components import
@@ -48,3 +52,7 @@
 @import './sections/geography.scss';
 @import './sections/certificates.scss';
 @import './sections/reviews.scss';
+@import './sections/partners.scss';
+@import './sections/process.scss';
+@import './sections/promo.scss';
+@import './sections/work.scss';

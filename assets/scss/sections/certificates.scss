@@ -42,6 +42,7 @@
   }
 
   &__item {
+    cursor: pointer;
     overflow: hidden;
     border-radius: vw(4px);
     width: vw(260px);

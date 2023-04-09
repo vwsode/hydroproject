@@ -12,9 +12,6 @@
     height: vwh(64px);
   }
 
-  @media screen and (max-width: 991px) {
-    height: vwt(64px);
-  }
 
   @media screen and (max-width: 576px) {
     height: vwm(64px);
@@ -34,9 +31,7 @@
       gap: vwh(24px);
     }
 
-    @media screen and (max-width: 991px) {
-      gap: vwt(24px);
-    }
+
 
     @media screen and (max-width: 576px) {
       gap: vwm(24px);
@@ -58,9 +53,6 @@
       gap: vwh(12px);
     }
 
-    @media screen and (max-width: 991px) {
-      display: none;
-    }
 
     @media screen and (max-widtH: 576px) {
     }
@@ -77,11 +69,6 @@
       height: vwh(48px);
     }
 
-    @media screen and (max-width: 991px) {
-      width: vwt(183px);
-      height: vwt(48px);
-    }
-
     @media screen and (max-width: 576px) {
       width: vwm(160px);
       height: vwm(42px);
@@ -94,11 +81,6 @@
       @media screen and (max-width: 1401px) {
         width: vwh(183px);
         height: vwh(48px);
-      }
-
-      @media screen and (max-width: 991px) {
-        width: vwt(183px);
-        height: vwt(48px);
       }
 
       @media screen and (max-width: 576px) {
@@ -130,12 +112,6 @@
       padding: vwh(10px);
     }
 
-    @media screen and (max-width: 991px) {
-      width: vwt(60px);
-      height: vwt(60px);
-      padding: vwt(10px);
-    }
-
     @media screen and (max-width: 576px) {
       width: vwm(60px);
       height: vwm(60px);
@@ -149,11 +125,6 @@
       @media screen and (max-width: 1401px) {
         width: vwh(40px);
         height: vwh(40px);
-      }
-
-      @media screen and (max-width: 991px) {
-        width: vwt(40px);
-        height: vwt(40px);
       }
 
       @media screen and (max-width: 576px) {
@@ -190,10 +161,6 @@
         margin-top: vwh(6px);
       }
 
-      @media screen and (max-width: 991px) {
-        margin-top: vwt(6px);
-      }
-
       @media screen and (max-width: 576px) {
         font-size: vwm(20px);
         margin-top: vwm(6px);
@@ -226,11 +193,6 @@
       padding: vwh(10px) vwh(20px);
     }
 
-    @media screen and (max-width: 991px) {
-      border-radius: vwt(4px);
-      height: vwt(40px);
-      padding: vwt(10px) vwt(20px);
-    }
 
     @media screen and (max-width: 576px) {
       margin-top: vwm(12px);
@@ -259,12 +221,9 @@
     top: calc(vwt(64px) + vwt(40px));
     padding-right: vwt(16px);
     display: none;
-
-    @media screen and (max-width: 991px) {
-      display: block;
-    }
-
+    
     @media screen and (max-width: 576px) {
+      display: block;
       width: calc(100% - vwm(16px));
       top: calc(vwm(64px) + vwm(40px));
       padding-right: vwm(16px);
@@ -287,12 +246,9 @@
     width: vwt(40px);
 
     padding: vwt(9px) 0;
-
-    @media screen and (max-width: 991px) {
-      display: flex;
-    }
-
+    
     @media screen and (max-width: 576px) {
+      display: flex;
       gap: vwm(8px);
       width: vwm(40px);
 

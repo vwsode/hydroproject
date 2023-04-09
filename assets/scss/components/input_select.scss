@@ -72,6 +72,9 @@
     background: $blue_main;
     overflow: hidden;
 
+    transition-property: opacity;
+    transition-duration: 200ms;
+
     position: absolute;
     width: 100%;
     left: 0;
